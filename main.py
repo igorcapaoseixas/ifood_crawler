@@ -22,7 +22,7 @@ def main():
     
     gcs_writer = GCSStorageWriter(storage_path=storage_path, project_id='dw-volix', credentials=credentials)
     
-    json_writer = JsonStorageWriter(storage_writer=gcs_writer, scraping_date_path=scraping_date_path)
+    json_writer = JsonStorageWriter(storage_writer=gcs_writer)
     
     stores = store_ids()
     stores = json.dumps(stores)
