@@ -32,7 +32,7 @@ def main():
         for state, store_id in states.items():
             print(f"Store: {store}, State: {state}")
             
-            base_file_path = f'{storage_path}/{store}/{scraping_date_path}/{state}/{store_id}/'
+            base_file_path = f'{storage_path}/{store}/{state}/{store_id}/'
             
             catalog = crawler.search_store_catalog(store_id=store_id)
             
