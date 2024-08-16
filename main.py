@@ -45,4 +45,7 @@ def main():
                file_path = file_path + '/details'
                json_writer.write_json_to_storage(file_path=file_path, json_data=details)
 
-                
+
+if __name__ == "__main__":
+    main()
+    
