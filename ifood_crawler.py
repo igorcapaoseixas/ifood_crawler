@@ -44,9 +44,12 @@ class IfoodCrawler:
             'acess_key': self.access_key,
             'secret_key': self.secret_key
         }
-        response = self.http_client.get(f'{base_url}/{store_id}/catalog', headers=headers)
-        if response.status_code == 200:
-            return json.loads(response.content)
+        try:
+            response = self.http_client.get(f'{base_url}/{store_id}/catalog', headers=headers)
+            if response.status_code == 200:
+                return json.loads(response.content)
+        except Exception as e:
+            print(f'|--> Exception raised {e} when trying to access {base_url}/{store_id}/catalog')
 
 
     def search_store_details(self, store_id):
@@ -55,7 +58,10 @@ class IfoodCrawler:
             f"query": "query ($merchantId: String!) { merchant (merchantId: $merchantId, required: true) { available availableForScheduling contextSetup { catalogGroup context regionGroup } currency deliveryFee { originalValue type value } deliveryMethods { catalogGroup deliveredBy id maxTime minTime mode originalValue priority schedule { now shifts { dayOfWeek endTime interval startTime } timeSlots { availableLoad date endDateTime endTime id isAvailable originalPrice price startDateTime startTime } } subtitle title type value state } deliveryTime distance features id mainCategory { code name } minimumOrderValue name paymentCodes preparationTime priceRange resources { fileName type } slug tags takeoutTime userRating } merchantExtra (merchantId: $merchantId, required: false) { address { city country district latitude longitude state streetName streetNumber timezone zipCode } categories { code description friendlyName } companyCode configs { bagItemNoteLength chargeDifferentToppingsMode nationalIdentificationNumberRequired orderNoteLength } deliveryTime description documents { CNPJ { type value } MCC { type value } } enabled features groups { externalId id name type } id locale mainCategory { code description friendlyName } merchantChain { externalId id name } metadata { ifoodClub { banner { action image priority title } } } minimumOrderValue minimumOrderValueV2 name phoneIf priceRange resources { fileName type } shifts { dayOfWeek duration start } shortId tags takeoutTime test type userRatingCount } }",
             "variables": {"merchantId": store_id}
         }
-        response = self.http_client.post(base_url, payload=payload)
-        if response.status_code == 200:
-            return json.loads(response.content)
+        try:
+            response = self.http_client.post(base_url, payload=payload)
+            if response.status_code == 200:
+                return json.loads(response.content)
+        except Exception as e:
+            print(f'|--> Exception raised {e} when trying to access {base_url}')
 
