@@ -4,9 +4,10 @@ from datetime import datetime, timedelta
 from ifood_crawler import HttpClient, IfoodCrawler
 from json_writer import GCSStorageWriter, JsonStorageWriter
 
+
 def main():
     
-    acess_key = '69f181d5-0046-4221-b7b2-deef62bd60d5'
+    access_key = '69f181d5-0046-4221-b7b2-deef62bd60d5'
     secret_key = '9ef4fb4f-7a1d-4e0d-a9b1-9b82873297d8'
     user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36'
     proxies = {'http': f'http://brd-customer-hl_4ba48506-zone-data_center:zkus3rbg4d1v@brd.superproxy.io:22225'}
@@ -17,7 +18,7 @@ def main():
     
     http_client = HttpClient(user_agent=user_agent, proxies=proxies)
     
-    crawler = IfoodCrawler(acess_key=acess_key, secret_key=secret_key, http_client=http_client)
+    crawler = IfoodCrawler(access_key=access_key, secret_key=secret_key, http_client=http_client)
     
     gcs_writer = GCSStorageWriter(storage_path=storage_path, project_id='dw-volix', credentials=credentials)
     
@@ -31,21 +32,21 @@ def main():
         for state, store_id in states.items():
             print(f"Store: {store}, State: {state}")
             
-            file_path = f'{storage_path}/{scraping_date_path}/{store}/{state}/{store_id}/'
+            base_file_path = f'{storage_path}/{store}/{scraping_date_path}/{state}/{store_id}/'
             
             catalog = crawler.search_store_catalog(store_id=store_id)
             
             if catalog:
-                file_path = file_path + '/catalog'
-                json_writer.write_json_to_storage(file_path=file_path, json_data=catalog)
+                catalog_file_path = base_file_path + 'catalog.json'
+                json_writer.write_json_to_storage(file_path=catalog_file_path, json_data=catalog)
                 
             details = crawler.search_store_details(store_id=store_id)
             
             if details:
-               file_path = file_path + '/details'
-               json_writer.write_json_to_storage(file_path=file_path, json_data=details)
+               details_file_path = base_file_path + 'details.json'
+               json_writer.write_json_to_storage(file_path=details_file_path, json_data=details)
 
 
 if __name__ == "__main__":
     main()
-    
+

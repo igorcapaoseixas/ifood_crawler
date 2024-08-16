@@ -40,9 +40,8 @@ class JsonStorageWriter:
     do arquivo para uma implementação de StorageWriter, como o GCSStorageWriter.
     """
     
-    def __init__(self, storage_writer, scraping_date_path):
+    def __init__(self, storage_writer):
         self.storage_writer = storage_writer
-        self.scraping_date_path = scraping_date_path
 
 
     def write_json_to_storage(self, file_path, json_data):

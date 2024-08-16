@@ -19,7 +19,7 @@ class HttpClient:
         return requests.get(url, headers=headers, proxies=self.proxies)
 
 
-    def post(self, url, headers=None, payload=None):        
+    def post(self, url, headers=None, payload=None):
         headers = headers or {}
         headers['User-Agent'] = self.user_agent
         return requests.post(url, headers=headers, json=payload, proxies=self.proxies)
@@ -50,7 +50,7 @@ class IfoodCrawler:
 
 
     def search_store_details(self, store_id):
-        base_url = 'https://marketplace.ifood.com.br/v1/merchant-info/graphql'
+        base_url = 'https://marketplace.ifood.com.br/v1/merchant-info/graphql?latitude=&longitude=&channel=IFOOD'
         payload = {
             f"query": "query ($merchantId: String!) { merchant (merchantId: $merchantId, required: true) { available availableForScheduling contextSetup { catalogGroup context regionGroup } currency deliveryFee { originalValue type value } deliveryMethods { catalogGroup deliveredBy id maxTime minTime mode originalValue priority schedule { now shifts { dayOfWeek endTime interval startTime } timeSlots { availableLoad date endDateTime endTime id isAvailable originalPrice price startDateTime startTime } } subtitle title type value state } deliveryTime distance features id mainCategory { code name } minimumOrderValue name paymentCodes preparationTime priceRange resources { fileName type } slug tags takeoutTime userRating } merchantExtra (merchantId: $merchantId, required: false) { address { city country district latitude longitude state streetName streetNumber timezone zipCode } categories { code description friendlyName } companyCode configs { bagItemNoteLength chargeDifferentToppingsMode nationalIdentificationNumberRequired orderNoteLength } deliveryTime description documents { CNPJ { type value } MCC { type value } } enabled features groups { externalId id name type } id locale mainCategory { code description friendlyName } merchantChain { externalId id name } metadata { ifoodClub { banner { action image priority title } } } minimumOrderValue minimumOrderValueV2 name phoneIf priceRange resources { fileName type } shifts { dayOfWeek duration start } shortId tags takeoutTime test type userRatingCount } }",
             "variables": {"merchantId": store_id}
