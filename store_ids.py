@@ -46,95 +46,95 @@ def store_ids():
                 'PI': '06daef53-614a-42eb-8347-10c116c0ad65',
                 'ES': '6b3800f5-abc1-4ce9-9f3a-1068bbd7cff2'
             },
-            "McDonald's": {
-                'SP': '2b988c51-d3c3-4a8d-b39d-2f35153a6a0c',
-                'RJ': 'f771bd62-555f-4f74-a139-dd7eda22a0a6',
-                'PA': 'f418b333-8d15-4084-a793-8cd5175e659f',
-                'MG': 'a720a4b0-db31-4b2a-9a36-b3e10f5cb085',
-                'DF': 'f9ee449c-aa92-496c-a862-09e2b67ae4f7',
-                'MS': 'ad91d421-c236-4d3f-b694-87ed3384706c',
-                'MT': 'bd8477a9-f46e-4155-867a-19c4e098d507',
-                'PR': '7a517558-b3ec-4bee-b013-4fb72cc4ce1c',
-                'SC': '538fb51d-87f6-4569-982b-fb689e5d3d54',
-                'GO': '23e5cd51-cd8a-4b20-814a-fd35b305fee3',
-                'PB': 'c9473a02-fc9b-4b1b-8eb3-975796e201c8',
-                'AL': '8aa5ffc1-4ad0-4397-87b8-5f3b3bc4951a',
-                'AM': '15c86d5b-7e51-4372-9676-eff2e36c2b44',
-                'RS': '0c751b4e-c659-439e-a888-ceacb04a68a9',
-                'RO': 'ba9640c2-436b-4e4d-a925-f6f28da6db02',
-                'PE': 'c0449897-8052-437d-8b8a-f2965664caec',
-                'BA': '9939873c-3d80-428e-82d9-2b7fa814adbb',
-                'MA': 'faf5dfbc-23f9-4343-910b-87c0590ff356',
-                'PI': '9578b774-a98d-42ae-b0f4-fcf6752fa7a2',
-                'SE': '767a1273-3085-4e06-bd7b-ed122db9ac5e',
-                'ES': '50464b64-2487-4b82-ae35-176cef69297b'
-            },
-            'Scuola': {
-                'MG': '064a37b7-6380-42b3-a809-cdc8d2d34484'
-            },
-            'Pizza_Pazza': {
-                'MG': '777cb163-48d6-475e-877e-6af0b551cb49'
-            },
-            'Pizzaria_Barreiro': {
-                'MG': '38f8faca-6300-4b07-93d7-5a441b902db2'
-            },
-            'Pizza_Delivery': {
-                'MG': '162bded3-68d3-4dc7-8108-6354713e3823'
-            },
-            'Happy_Pizzaria': {
-                'PR': 'fbcd247d-8bfb-4b5a-a90e-cca0b2184ffe'
-            },
-            'Pizzaria_Baggio': {
-                'PR': '9974d88c-48b2-4d0c-a67c-2db0b41c668c'
-            },
-            'Pizzaria_DaVinci': {
-                'PR': 'a781c9d6-81c7-478d-8ab6-5a438a32a84f'
-            },
-            'Pizza_Capricciosa': {
-                'RJ': 'de73ae67-87ea-4e3b-be44-872744b73c6f'
-            },
-            'Forneria_Original': {
-                'RJ': 'e568e445-62b8-4551-90f6-b2089d4913d6'
-            },
-            'O_Fornes': {
-                'RJ': '6155bc4d-c7a6-4951-9d8d-2b17a79e448a'
-            },
-            'Parme': {
-                'RJ': '0d0ebceb-d639-4f40-bfa6-dfe678570444'
-            },
-            'Pizza_do_Rao': {
-                'RJ': '84e5daa3-0df1-458a-800d-04dbe88f6c0b'
-            },
-            'Vezpa': {
-                'RJ': 'ab62674e-7653-48e9-86fc-ba1d3b4c9f83'
-            },
-            'Angelo_Pizzas': {
-                'SP': '9b9a477e-0ea4-4d42-9e9f-13fa1544fae7'
-            },
-            'Pizzaria_Brazzatto': {
-                'SP': '8a4e78b0-7d17-4037-9004-a2b8b45a3662'
-            },
-            'Cabanas_Pizzaria': {
-                'SP': '815b29f3-09cc-471b-b935-ebfec749bbc9'
-            },
-            'DiNapoli_Pizzaria': {
-                'SP': '59a7ee04-3d55-4ff2-bfaf-b2e3ef16bd3f'
-            },
-            'Didio_Pizza': {
-                'SP': 'a9498d4a-646d-4a32-b38b-46eb6a5aefee'
-            },
-            "Dimitri's_Pizzeria": {
-                'SP': '55a77415-59ff-4656-9412-c8d891ca8234'
-            },
-            "Domingo's_Pizza": {
-                'SP': '89ce4a66-1404-43f7-a963-4e41dbcfbfd5'
-            },
-            'Patroni': {
-                'SP': 'ecb56db9-70d0-45d5-8a4e-deab095db359'
-            },
-            'Pizza_Prime': {
-                'SP': '5d4247ff-5f09-49ed-8499-269ac4ee1e5d'
-            }
+            # "McDonald's": {
+            #     'SP': '2b988c51-d3c3-4a8d-b39d-2f35153a6a0c',
+            #     'RJ': 'f771bd62-555f-4f74-a139-dd7eda22a0a6',
+            #     'PA': 'f418b333-8d15-4084-a793-8cd5175e659f',
+            #     'MG': 'a720a4b0-db31-4b2a-9a36-b3e10f5cb085',
+            #     'DF': 'f9ee449c-aa92-496c-a862-09e2b67ae4f7',
+            #     'MS': 'ad91d421-c236-4d3f-b694-87ed3384706c',
+            #     'MT': 'bd8477a9-f46e-4155-867a-19c4e098d507',
+            #     'PR': '7a517558-b3ec-4bee-b013-4fb72cc4ce1c',
+            #     'SC': '538fb51d-87f6-4569-982b-fb689e5d3d54',
+            #     'GO': '23e5cd51-cd8a-4b20-814a-fd35b305fee3',
+            #     'PB': 'c9473a02-fc9b-4b1b-8eb3-975796e201c8',
+            #     'AL': '8aa5ffc1-4ad0-4397-87b8-5f3b3bc4951a',
+            #     'AM': '15c86d5b-7e51-4372-9676-eff2e36c2b44',
+            #     'RS': '0c751b4e-c659-439e-a888-ceacb04a68a9',
+            #     'RO': 'ba9640c2-436b-4e4d-a925-f6f28da6db02',
+            #     'PE': 'c0449897-8052-437d-8b8a-f2965664caec',
+            #     'BA': '9939873c-3d80-428e-82d9-2b7fa814adbb',
+            #     'MA': 'faf5dfbc-23f9-4343-910b-87c0590ff356',
+            #     'PI': '9578b774-a98d-42ae-b0f4-fcf6752fa7a2',
+            #     'SE': '767a1273-3085-4e06-bd7b-ed122db9ac5e',
+            #     'ES': '50464b64-2487-4b82-ae35-176cef69297b'
+            # },
+            # 'Scuola': {
+            #     'MG': '064a37b7-6380-42b3-a809-cdc8d2d34484'
+            # },
+            # 'Pizza_Pazza': {
+            #     'MG': '777cb163-48d6-475e-877e-6af0b551cb49'
+            # },
+            # 'Pizzaria_Barreiro': {
+            #     'MG': '38f8faca-6300-4b07-93d7-5a441b902db2'
+            # },
+            # 'Pizza_Delivery': {
+            #     'MG': '162bded3-68d3-4dc7-8108-6354713e3823'
+            # },
+            # 'Happy_Pizzaria': {
+            #     'PR': 'fbcd247d-8bfb-4b5a-a90e-cca0b2184ffe'
+            # },
+            # 'Pizzaria_Baggio': {
+            #     'PR': '9974d88c-48b2-4d0c-a67c-2db0b41c668c'
+            # },
+            # 'Pizzaria_DaVinci': {
+            #     'PR': 'a781c9d6-81c7-478d-8ab6-5a438a32a84f'
+            # },
+            # 'Pizza_Capricciosa': {
+            #     'RJ': 'de73ae67-87ea-4e3b-be44-872744b73c6f'
+            # },
+            # 'Forneria_Original': {
+            #     'RJ': 'e568e445-62b8-4551-90f6-b2089d4913d6'
+            # },
+            # 'O_Fornes': {
+            #     'RJ': '6155bc4d-c7a6-4951-9d8d-2b17a79e448a'
+            # },
+            # 'Parme': {
+            #     'RJ': '0d0ebceb-d639-4f40-bfa6-dfe678570444'
+            # },
+            # 'Pizza_do_Rao': {
+            #     'RJ': '84e5daa3-0df1-458a-800d-04dbe88f6c0b'
+            # },
+            # 'Vezpa': {
+            #     'RJ': 'ab62674e-7653-48e9-86fc-ba1d3b4c9f83'
+            # },
+            # 'Angelo_Pizzas': {
+            #     'SP': '9b9a477e-0ea4-4d42-9e9f-13fa1544fae7'
+            # },
+            # 'Pizzaria_Brazzatto': {
+            #     'SP': '8a4e78b0-7d17-4037-9004-a2b8b45a3662'
+            # },
+            # 'Cabanas_Pizzaria': {
+            #     'SP': '815b29f3-09cc-471b-b935-ebfec749bbc9'
+            # },
+            # 'DiNapoli_Pizzaria': {
+            #     'SP': '59a7ee04-3d55-4ff2-bfaf-b2e3ef16bd3f'
+            # },
+            # 'Didio_Pizza': {
+            #     'SP': 'a9498d4a-646d-4a32-b38b-46eb6a5aefee'
+            # },
+            # "Dimitri's_Pizzeria": {
+            #     'SP': '55a77415-59ff-4656-9412-c8d891ca8234'
+            # },
+            # "Domingo's_Pizza": {
+            #     'SP': '89ce4a66-1404-43f7-a963-4e41dbcfbfd5'
+            # },
+            # 'Patroni': {
+            #     'SP': 'ecb56db9-70d0-45d5-8a4e-deab095db359'
+            # },
+            # 'Pizza_Prime': {
+            #     'SP': '5d4247ff-5f09-49ed-8499-269ac4ee1e5d'
+            # }
         }
     }
 
